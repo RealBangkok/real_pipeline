@@ -2,8 +2,8 @@ import maya.cmds as cmds
 
 import sys, os, shutil, logging, json, time, traceback
 
-from sal_pipeline.src import env
-from sal_pipeline.src import utils
+from real_pipeline.src import env
+from real_pipeline.src import utils
 import mayaGlobalPublisher_util as pubUtil
 # reload(pubUtil)
 # reload(utils)

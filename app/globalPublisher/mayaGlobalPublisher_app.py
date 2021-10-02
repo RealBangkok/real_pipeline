@@ -27,9 +27,8 @@ except ImportError:
 	import shiboken
 
 # project libs import
-from sal_pipeline.src import env
-from sal_pipeline.src import utils
-from sal_pipeline.src import log
+from real_pipeline.src import env
+from real_pipeline.src import log
 # reload(utils)
 # reload(env)
 # reload(log)
@@ -216,7 +215,7 @@ class mayaGlobalPublisher( QMainWindow ):
 		logger.info ("===== Publish Start =====")
 
 		if not cmds.objExists("Geo_grp"):
-			cmds.confirmDialog("Not have \"Geo_grp\"")
+			cmds.confirmDialog(message="Not have \"Geo_grp\"")
 			return False
 
 		# Setup progressbar============================

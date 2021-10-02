@@ -1,7 +1,7 @@
 # duplicateOverSurface
 
-from sal_pipeline.src import env
-from sal_pipeline.src import log
+from real_pipeline.src import env
+from real_pipeline.src import log
 # logger = log.logger("duplicateOverSurface")
 # logger = logger.getLogger()
 

@@ -2,9 +2,9 @@ import maya.cmds as cmds
 import maya.mel  as mel
 import datetime, os
 
-from sal_pipeline.src import env
-from sal_pipeline.src import utils
-from sal_pipeline.src import log
+from real_pipeline.src import env
+from real_pipeline.src import utils
+from real_pipeline.src import log
 # reload(env)
 # reload(utils)
 # reload(log)
@@ -177,7 +177,7 @@ class renderSetting_window :
 			return False
 
 		# Result
-		logger.info (cmds.workspace( "images",q=True ,fileRuleEntry = True ))
+		#logger.info (cmds.workspace( "images",q=True ,fileRuleEntry = True ))
 
 	def addAov(self, *args):
 		""" Add selected AOV to renderer """

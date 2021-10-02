@@ -26,8 +26,8 @@ except ImportError:
 	from PySide import __version__
 	import shiboken
 
-from sal_pipeline.src import env
-from sal_pipeline.src import utils
+from real_pipeline.src import env
+from real_pipeline.src import utils
 reload(utils)
 reload(env)
 

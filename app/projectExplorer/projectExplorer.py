@@ -175,7 +175,7 @@ class salProjectExplorer( QMainWindow ):
 		# self.ui.label_path_editable.setStyleSheet("""font-weight: bold;""")
 
 		self.ui.label_myAccount.setText( getEnv.user )
-		self.ui.listWidget_object_center.setSpacing(2)
+		# self.ui.listWidget_object_center.setSpacing(2)
 
 		self.ui.addSequence_pushButton.clicked.connect(self.addSequence_pushButton_onClick)
 		self.ui.addAsset_pushButton.clicked.connect(self.addAsset_pushButton_onClick)
@@ -371,6 +371,9 @@ class salProjectExplorer( QMainWindow ):
 			#
 			self.ui.listWidget_asset.clear()
 
+			logger.info('project: ' + getInfo.projectName)
+			logger.info('project: ' + getInfo.projectPath)
+			logger.info('project: ' + getInfo.projectConfigFilePath)
 			for mytype in os.listdir( getInfo.assetPath ):
 				if os.path.isdir(getInfo.assetPath + '/' + mytype):
 					self.ui.listWidget_asset.addItem( mytype )

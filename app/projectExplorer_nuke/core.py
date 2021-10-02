@@ -4,7 +4,7 @@
 import sys, os, json, subprocess
 import nuke
 
-from sal_pipeline.src import env
+from real_pipeline.src import env
 info   = env.nuke_info()
 getEnv = env.getEnv()
 

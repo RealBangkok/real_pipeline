@@ -20,7 +20,7 @@ try :
 except ImportError :
 
 	try:
-		from sal_pipeline.src import env
+		from real_pipeline.src import env
 		entityInfo = env
 		is_importEntityInfo = False
 	except ImportError as e:
